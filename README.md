@@ -5,6 +5,11 @@ make COMPUTE=<compute capability value> CUDAPATH=/usr/local/cuda-<version>
 ```
 Check **compute capability** for nvidia gpu: https://en.wikipedia.org/wiki/CUDA
 
+# GPU Stress Test
+```
+./gpu_burn -d <num_seconds>
+```
+
 
 # gpu-burn
 Multi-GPU CUDA stress test
