@@ -1,3 +1,11 @@
+# Building with custom CUDA_PATH and Compute Capability
+```
+cd gpu-burn
+make COMPUTE=<compute capability value> CUDAPATH=/usr/local/cuda-<version>
+```
+Check **compute capability** for nvidia gpu: https://en.wikipedia.org/wiki/CUDA
+
+
 # gpu-burn
 Multi-GPU CUDA stress test
 http://wili.cc/blog/gpu-burn.html
@@ -14,7 +22,7 @@ To remove artifacts built by GPU Burn:
 GPU Burn builds with a default Compute Capability of 5.0.
 To override this with a different value:
 
-`make COMPUTE=<compute capability value>`
+`make COMPUTE=<compute capability value>` 
 
 CFLAGS can be added when invoking make to add to the default
 list of compiler flags:
