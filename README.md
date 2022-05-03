@@ -4,6 +4,10 @@ cd gpu-burn
 make COMPUTE=<compute capability value> CUDAPATH=/usr/local/cuda-<version>
 ```
 Check **compute capability** for nvidia gpu: https://en.wikipedia.org/wiki/CUDA
+|GPU|CC|
+|--|--|
+|Tesla V100,|7.0|
+|A100 80GB, A100 40GB| 8.0|
 
 # GPU Stress Test
 ```
