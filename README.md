@@ -70,3 +70,17 @@ CCPATH can be specified to point to a specific gcc (default is
     
     Example:
     gpu-burn -d 3600
+    
+## Example
+```bash
+cd gpu-burn
+make COMPUTE=7.0 CUDAPATH=/usr/local/cuda-11.0
+
+while :
+do
+  ./gpu_burn -d 180
+  sleep 1800
+done
+
+sleep 10h
+```
