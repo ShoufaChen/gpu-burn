@@ -19,6 +19,15 @@ Check **compute capability** for nvidia gpu: https://en.wikipedia.org/wiki/CUDA
 Multi-GPU CUDA stress test
 http://wili.cc/blog/gpu-burn.html
 
+# Easy docker build and run
+
+```
+git clone https://github.com/wilicc/gpu-burn
+cd gpu-burn
+docker build -t gpu_burn .
+docker run --rm --gpus all gpu_burn
+```
+
 # Building
 To build GPU Burn:
 
@@ -69,7 +78,7 @@ CCPATH can be specified to point to a specific gcc (default is
     -h	Show this help message
     
     Example:
-    gpu-burn -d 3600
+    gpu_burn -d 3600
     
 ## Example
 ```bash
